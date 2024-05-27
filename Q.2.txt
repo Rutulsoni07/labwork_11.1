@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+ int x;
+ int y;
+int *ptrx;
+int *ptry;
+ printf("enter a value of x:");
+ scanf("%d",&x);
+ printf("enter a value of y:");
+ scanf("%d",&y);
+ 
+  printf("Before swapping:\nx: %d\ny: %d\n", x, y);
+ 
+ptrx=&x;
+ptry=&y;
+
+int z= *ptrx;
+  *ptrx = *ptry;
+  *ptry = z;
+
+ 
+ printf("After swapping:\nx: %d\ny: %d\n", x, y);
+
+ 
+ 
+    return 0;
+}
+
+output=
+
+enter a value of x:3
+enter a value of y:5
+Before swapping:
+x: 3
+y: 5
+After swapping:
+x: 5
+y: 3
+
